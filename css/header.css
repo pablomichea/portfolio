@@ -1,10 +1,14 @@
 #title {
-  opacity: 95%;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-indent: 35px;
-  background-color: #0a0a0a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-indent: 100px;
+  width: 100vw;
+  height: 10vh;
+  background-color: #0f0909;
 }
 
 #name {

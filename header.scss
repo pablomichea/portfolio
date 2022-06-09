@@ -1,11 +1,11 @@
 #title {
-  // margin-top: 120px;
-  opacity: 95%;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-indent: 35px;
-  background-color: rgb(10, 10, 10);
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  text-indent: 100px;
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(15, 9, 9);
 }
 #name {
   font-family: gothic;
