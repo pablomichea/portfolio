@@ -6,7 +6,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-indent: 100px;
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   background-color: #0f0909;
 }
