@@ -1,0 +1,7 @@
+{
+  "singleQuote": true,
+  "arrowParens": "always",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
+}

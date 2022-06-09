@@ -1,0 +1,197 @@
+body {
+  position: relative;
+  font-family: openSansLigth;
+  background-color: rgba(91, 97, 119, 0.945);
+  font-size: 15px;
+}
+
+#intro {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8fr;
+      grid-template-columns: 1fr 8fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 20px;
+  background-color: rgba(53, 7, 39, 0.589);
+}
+
+#intro-title {
+  font-family: openSans;
+  font-size: 1.5em;
+}
+
+#intro-title::-moz-selection {
+  color: white;
+  background: #634747;
+}
+
+#intro-title::selection {
+  color: white;
+  background: #634747;
+}
+
+#left-menu-items {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+#left-menu-items li {
+  font-family: rubik;
+  background-color: #070e03;
+  -webkit-box-sizing: 0px 0px 0px 0px red;
+          box-sizing: 0px 0px 0px 0px red;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: inherit;
+}
+
+#left-menu-items li:hover {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #7c6363;
+}
+
+#left-menu-items li:active {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #5e4a4a;
+}
+
+#intro-txt {
+  font-family: openSansLigth;
+  font-size: 1rem;
+  padding: 10px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(85%, rgba(158, 167, 170, 0.056)), color-stop(10%, rgba(143, 150, 150, 0.192)));
+  background: linear-gradient(0deg, rgba(158, 167, 170, 0.056) 85%, rgba(143, 150, 150, 0.192) 10%);
+  color: rgba(255, 255, 255, 0.987);
+  padding-right: 30px;
+  border-left: 8px solid rgba(51, 8, 8, 0.44);
+  min-width: 200px;
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  #intro {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 4fr;
+        grid-template-rows: 1fr 4fr;
+  }
+  #left-menu-items {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #name,
+  #rol {
+    font-size: 1.2em;
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(0, 0, 0, 0.981);
+  }
+  main {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    margin: 70px 0px 0px 0px;
+  }
+  #left-menu-items li {
+    height: 70%;
+    width: 8.5em;
+  }
+  #intro-txt {
+    color: rgba(255, 0, 0, 0.987);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, rgba(237, 28, 28, 0.159)), color-stop(10%, rgba(175, 84, 84, 0.275)));
+    background: linear-gradient(180deg, rgba(237, 28, 28, 0.159) 31%, rgba(175, 84, 84, 0.275) 10%);
+  }
+  #title {
+    text-indent: 100px;
+  }
+}
+
+@media (max-width: 730px) {
+  body {
+    overflow: hidden;
+    background-color: #3f3f3f;
+  }
+  #left-menu-items li {
+    background-color: #637c7a;
+    color: white;
+    height: 70%;
+    width: 7em;
+  }
+  #intro-txt {
+    color: rgba(0, 255, 149, 0.987);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, rgba(237, 28, 28, 0.159)), color-stop(10%, rgba(175, 84, 84, 0.275)));
+    background: linear-gradient(180deg, rgba(237, 28, 28, 0.159) 31%, rgba(175, 84, 84, 0.275) 10%);
+  }
+  #name,
+  #rol {
+    font-size: 1em;
+    text-indent: 50px;
+  }
+  #title {
+    text-indent: 80px;
+  }
+}
+
+@media (max-width: 620px) {
+  body {
+    overflow: hidden;
+    background-color: black;
+  }
+  #name,
+  #rol {
+    font-size: 0.9em;
+    text-indent: 40px;
+  }
+}
+/*# sourceMappingURL=body.css.map */

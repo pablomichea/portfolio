@@ -1,0 +1,12 @@
+.contxMenu {
+  transition: 150ms linear;
+  display: none;
+  opacity: 0%;
+  position: absolute;
+  user-select: none;
+  height: max-content;
+  width: max-content;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.438);
+}

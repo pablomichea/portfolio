@@ -1,0 +1,131 @@
+@font-face {
+  font-family: gothic;
+  src: url(/fonts/DotGothic16-Regular.ttf);
+}
+
+@font-face {
+  font-family: openSansLigth;
+  src: url(/fonts/static/OpenSans/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: openSans;
+  src: url(/fonts/static/OpenSans/OpenSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: gochi;
+  src: url(/fonts/GochiHand-Regular.ttf);
+}
+
+@font-face {
+  font-family: rubik;
+  src: url(/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
+*::-moz-selection {
+  color: black;
+  background: #00f3be;
+}
+
+*::selection {
+  color: black;
+  background: #00f3be;
+}
+
+* {
+  cursor: url("/cursors/cursor_arrow3.png"), auto;
+}
+
+main {
+  background-repeat: repeat;
+  margin: auto;
+  width: 850px;
+  margin-top: 70px;
+}
+
+h1,
+h2 {
+  margin: 0px;
+  font-weight: normal;
+  font-size: inherit;
+}
+
+a {
+  cursor: url(/cursors/hand/1x/outline_pan_tool_alt_white_48dp-2.png), auto;
+  text-decoration: none;
+  font-family: openSans;
+  font-size: 1em;
+  color: white;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*                   Scroll                  */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-button :decrement {
+  background: #bababa;
+}
+
+::-webkit-scrollbar-track {
+  background: #353535;
+  background-image: url(/img/bg3.png);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(143, 143, 143, 0.575);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(172, 172, 172, 0.836);
+}
+
+footer {
+  font-family: rubik;
+  width: 100%;
+  padding-top: 20px;
+}
+
+footer small {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #00ffea;
+  background-color: rgba(255, 255, 255, 0.103);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+#title {
+  // margin-top: 120px;
+  opacity: 95%;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-indent: 35px;
+  background-color: rgb(10, 10, 10);
+}
+#name {
+  font-family: gothic;
+  // font-size: 1.5em;
+  color: #ffffff;
+}
+#name::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(255, 0, 0);
+}
+#rol {
+  font-family: gothic;
+  font-size: 1.5em;
+
+  color: #ffffff;
+  margin: 0px;
+  // text-indent: 140px;
+}
+#rol::selection {
+  color: rgb(255, 0, 0);
+  background: rgb(255, 255, 255);
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  border-radius: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  margin: auto;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  user-select: none;
+  font-size: 1.2em;
+}
