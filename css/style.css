@@ -1,26 +1,26 @@
 @font-face {
   font-family: gothic;
-  src: url(fonts/DotGothic16-Regular.ttf);
+  src: url(../fonts/DotGothic16-Regular.ttf);
 }
 
 @font-face {
   font-family: openSansLigth;
-  src: url(fonts/static/OpenSans/OpenSans-Light.ttf);
+  src: url(../fonts/static/OpenSans/OpenSans-Light.ttf);
 }
 
 @font-face {
   font-family: openSans;
-  src: url(fonts/static/OpenSans/OpenSans-Medium.ttf);
+  src: url(../fonts/static/OpenSans/OpenSans-Medium.ttf);
 }
 
 @font-face {
   font-family: gochi;
-  src: url(fonts/GochiHand-Regular.ttf);
+  src: url(../fonts/GochiHand-Regular.ttf);
 }
 
 @font-face {
   font-family: rubik;
-  src: url(fonts/Rubik/Rubik-VariableFont_wght.ttf);
+  src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
 }
 
 *::-moz-selection {
@@ -34,7 +34,7 @@
 }
 
 * {
-  cursor: url("cursors/cursor_arrow3.png"), auto;
+  cursor: url("../cursors/cursor_arrow3.png"), auto;
 }
 
 main {
@@ -52,7 +52,7 @@ h2 {
 }
 
 a {
-  cursor: url(cursors/hand/1x/outline_pan_tool_alt_white_48dp-2.png), auto;
+  cursor: url(../cursors/hand/1x/outline_pan_tool_alt_white_48dp-2.png), auto;
   text-decoration: none;
   font-family: openSans;
   font-size: 1em;
@@ -93,7 +93,7 @@ ul {
 
 ::-webkit-scrollbar-track {
   background: #353535;
-  background-image: url(img/bg3.png);
+  background-image: url(../img/bg3.png);
 }
 
 ::-webkit-scrollbar-thumb {
