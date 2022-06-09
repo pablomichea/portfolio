@@ -105,9 +105,10 @@ ul {
 }
 
 footer {
+  position: fixed;
   font-family: rubik;
   width: 100%;
-  padding-top: 20px;
+  bottom: 0px;
 }
 
 footer small {

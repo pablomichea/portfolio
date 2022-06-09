@@ -4,14 +4,26 @@ body {
   background-color: rgba(91, 97, 119, 0.945);
   font-size: 15px;
 }
+body::after {
+  z-index: -1;
+  content: '';
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  // background-color: rgb(119, 0, 255);
+  background-image: url('../img/bg-line2.png');
+  opacity: 60%;
+}
 #intro {
   // padding: 8px;
   display: grid;
   grid-template-columns: 1fr 8fr;
   grid-template-rows: 1fr;
   gap: 20px;
-  // border-radius: 5px;
   background-color: rgba(53, 7, 39, 0.589);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
 }
 #intro-title {
   font-family: openSans;
