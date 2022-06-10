@@ -46,7 +46,6 @@ let RanBorderColor = (ele, speed, interval, op) => {
 
 /////////////Inits
 
-
 autoInputFX(
   '34 std::cout << name << ", a self taught software developer.";     ',
   rol,

@@ -19,7 +19,26 @@ body::after {
   opacity: 60%;
 }
 
+#translate {
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  font-family: rubik;
+  padding: 7px;
+  color: white;
+  font-size: 1rem;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+}
+
+#translate:hover {
+  background-color: rgba(255, 255, 255, 0.123);
+}
+
 #intro {
+  -webkit-transition: 200ms;
+  transition: 200ms;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 8fr;

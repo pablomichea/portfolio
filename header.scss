@@ -1,3 +1,10 @@
+.bio-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+}
 #title {
   display: flex;
   // justify-content: center;
@@ -7,6 +14,7 @@
   height: 10vh;
   background-color: rgb(15, 9, 9);
 }
+
 #name {
   font-family: gothic;
   // font-size: 1.5em;

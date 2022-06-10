@@ -2,6 +2,8 @@
 
 let body = document.querySelector('body');
 
+let bioHeader = document.querySelector('bio-header');
+
 window.addEventListener('mousemove', function () {
   if (window.innerWidth > 730) {
     body.style.overflow = 'auto';
@@ -9,3 +11,4 @@ window.addEventListener('mousemove', function () {
     body.style.overflow = 'hidden';
   }
 });
+

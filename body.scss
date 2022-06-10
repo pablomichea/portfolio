@@ -17,13 +17,28 @@ body::after {
   background-image: url('../img/bg-line2.png');
   opacity: 60%;
 }
+#translate {
+  transition: 200ms;
+  font-family: rubik;
+  padding: 7px;
+  color: white;
+  font-size: 1rem;
+  justify-self: right;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgb(255, 255, 255);
+}
+#translate:hover {
+  background-color: rgba(255, 255, 255, 0.123);
+}
 #intro {
+  transition: 200ms;
   display: grid;
   grid-template-columns: 1fr 8fr;
   grid-template-rows: 1fr;
   gap: 20px;
   background-color: rgb(65, 32, 55);
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  // width: 90%;
 }
 #intro-title {
   font-family: openSans;
