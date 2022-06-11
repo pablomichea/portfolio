@@ -1,7 +1,7 @@
 body {
   position: relative;
   font-family: openSansLigth;
-  background-color: rgba(91, 97, 119, 0.945);
+  background-color: #101b27;
   font-size: 15px;
   margin: 0px;
 }
@@ -46,7 +46,7 @@ body::after {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   gap: 20px;
-  background-color: #412036;
+  background-color: #412032;
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
 }

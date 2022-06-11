@@ -1,7 +1,7 @@
 body {
   position: relative;
   font-family: openSansLigth;
-  background-color: rgba(91, 97, 119, 0.945);
+  background-color: rgb(16, 27, 39);
   font-size: 15px;
   margin: 0px;
 }
@@ -36,7 +36,7 @@ body::after {
   grid-template-columns: 1fr 8fr;
   grid-template-rows: 1fr;
   gap: 20px;
-  background-color: hsl(320, 34%, 19%);
+  background-color: hsl(327, 34%, 19%);
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
   // width: 90%;
 }
