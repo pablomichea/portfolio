@@ -69,6 +69,6 @@ document.addEventListener('keyup', hideMenu);
 ////////////Inits
 contx_Menu.classList.add('contxMenu');
 
-contx_Menu.innerHTML = '<p>Hola</p>';
+contx_Menu.innerHTML = '<div>Hola</div>';
 
 body.appendChild(contx_Menu);

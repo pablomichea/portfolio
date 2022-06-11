@@ -35,11 +35,11 @@ let autoInputFX = (txt, ele, speed, repeat) => {
 };
 
 /////////////Random Border Color
-let RanBorderColor = (ele, speed, interval, op) => {
+let RanBorderColor = (ele, speed = '200ms', interval = 200, op = '0') => {
   ele.style.transition = speed;
   function exe() {
     let colorRandom = Math.random() * (240 - 360) + 240;
-    ele.style.border = `3px solid hsl(${colorRandom}, 100%,30%, ${op})`;
+    ele.style.background = `hsl(${colorRandom}, 100%,10%, ${op})`;
   }
   setInterval(exe, interval);
 };

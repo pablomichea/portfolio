@@ -46,7 +46,7 @@ body::after {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   gap: 20px;
-  background-color: #412037;
+  background-color: #412036;
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
 }
@@ -126,15 +126,21 @@ body::after {
   background-color: #5e4a4a;
 }
 
+.blur-transition {
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
 #intro-txt {
+  position: relative;
   font-family: openSansLigth;
   font-size: 1rem;
   padding: 10px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(85%, rgba(158, 167, 170, 0.056)), color-stop(10%, rgba(143, 150, 150, 0.192)));
-  background: linear-gradient(0deg, rgba(158, 167, 170, 0.056) 85%, rgba(143, 150, 150, 0.192) 10%);
-  color: rgba(255, 255, 255, 0.987);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(93%, rgba(158, 167, 170, 0.056)), color-stop(0%, rgba(143, 150, 150, 0.192)));
+  background: linear-gradient(0deg, rgba(158, 167, 170, 0.056) 93%, rgba(143, 150, 150, 0.192) 0%);
+  color: white;
   padding-right: 30px;
-  border-left: 8px solid rgba(51, 8, 8, 0.44);
+  border-left: 8px solid rgba(0, 0, 0, 0.301);
   min-width: 200px;
   max-width: 100%;
 }
