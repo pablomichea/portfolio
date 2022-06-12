@@ -45,8 +45,8 @@ body::after {
       grid-template-columns: 1fr 8fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  gap: 20px;
-  background-color: #412032;
+  background-color: #351828;
+  gap: 5px;
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
 }
@@ -140,7 +140,7 @@ body::after {
   background: linear-gradient(0deg, rgba(158, 167, 170, 0.056) 93%, rgba(143, 150, 150, 0.192) 0%);
   color: white;
   padding-right: 30px;
-  border-left: 8px solid rgba(0, 0, 0, 0.301);
+  border-left: 3px solid rgba(255, 255, 255, 0.1);
   min-width: 200px;
   max-width: 100%;
 }

@@ -36,9 +36,9 @@ const text_switch_fx = function (element, newString, speed) {
   let emptyTxt;
   //
   element.classList.add('blur-transition');
-  element.style.filter = `blur(${Math.random() * 5 + 1}px) drop-shadow(${
+  element.style.filter = `blur(${Math.random() * 5 + 1.5}px) drop-shadow(${
     Math.random() > 0.5 ? '-' : '+'
-  }${Math.random() * 30}px ${Math.random() > 0.5 ? '-' : '+'}${
+  }${Math.random() * 25}px ${Math.random() > 0.5 ? '-' : '+'}${
     Math.random() * 2
   }px ${Math.random() * 1}px white)`;
   // RanBorderColor(element);
