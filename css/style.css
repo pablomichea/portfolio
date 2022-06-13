@@ -14,13 +14,13 @@
 }
 
 @font-face {
-  font-family: gochi;
-  src: url(../fonts/GochiHand-Regular.ttf);
+  font-family: rubik;
+  src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
 }
 
 @font-face {
-  font-family: rubik;
-  src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
+  font-family: Quicksand;
+  src: url(/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 
 *::-moz-selection {
@@ -35,6 +35,37 @@
 
 * {
   cursor: url("../cursors/cursor_arrow.png"), auto;
+}
+
+:root {
+  --just-white: rgb(255, 255, 255);
+}
+
+a[target='_blank'] {
+  color: darkblue;
+}
+
+a[target='_blank']::after {
+  content: url(//imagen);
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+a[class|='link'] {
+  color: aqua;
+}
+
+a[href^='http'] {
+  color: aqua;
+}
+
+a[class^='google'] {
+  color: aqua;
+}
+
+a[href$='.cl'] {
+  color: black;
 }
 
 main {

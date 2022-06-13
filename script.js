@@ -1,7 +1,7 @@
 'strict mode';
 
 let body = document.querySelector('body');
-
+let intro = document.querySelector('#intro');
 let bioHeader = document.querySelector('bio-header');
 
 window.addEventListener('mousemove', function () {
@@ -11,4 +11,3 @@ window.addEventListener('mousemove', function () {
     body.style.overflow = 'hidden';
   }
 });
-

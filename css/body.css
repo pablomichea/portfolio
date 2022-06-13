@@ -45,7 +45,7 @@ body::after {
       grid-template-columns: 1fr 8fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  background-color: #351828;
+  background-color: #2d1523;
   gap: 5px;
   -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
@@ -90,11 +90,13 @@ body::after {
 }
 
 #left-menu-items li {
+  -webkit-transform: scaleY(-10px);
+          transform: scaleY(-10px);
   font-family: rubik;
   background-color: #070e03;
   -webkit-box-sizing: 0px 0px 0px 0px red;
           box-sizing: 0px 0px 0px 0px red;
-  color: white;
+  color: #fafafa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,7 +107,7 @@ body::after {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: inherit;
+  height: 100%;
 }
 
 #left-menu-items li:hover {
@@ -133,14 +135,15 @@ body::after {
 
 #intro-txt {
   position: relative;
-  font-family: openSansLigth;
+  font-family: Quicksand;
   font-size: 1rem;
   padding: 10px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(93%, rgba(158, 167, 170, 0.056)), color-stop(0%, rgba(143, 150, 150, 0.192)));
   background: linear-gradient(0deg, rgba(158, 167, 170, 0.056) 93%, rgba(143, 150, 150, 0.192) 0%);
-  color: white;
+  color: var(--just-white, white);
   padding-right: 30px;
-  border-left: 3px solid rgba(255, 255, 255, 0.1);
+  padding-left: 20px;
+  border-left: 3px solid white;
   min-width: 200px;
   max-width: 100%;
 }

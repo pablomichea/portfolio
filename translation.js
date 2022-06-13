@@ -1,6 +1,6 @@
 'strict mode';
 
-let bios = {
+const bios = {
   english: {
     p0: `I used to do web development as a hobby. Nowadays, I'm doing front and back-end. I'm a fan of CSS and JS. I like to create animations and creative code in general.`,
     p1: `I started coding when I was about 14 years old, when Macromedia was an awesome company and Flash MX 6 was a must in the web. Actionscript (a JS-like language) was very powerful. I could create all sort of animations and FX's, with the use of some simple math. That's how I spent all my time as a kid.`,
@@ -20,13 +20,11 @@ for (x in p) {
 }
 
 //Update bio language
-
 const translate = document.querySelector('#translate');
 translate.classList.add('translate');
-translate.textContent = 'Spanish';
+translate.textContent = 'Español';
 
 const text_switch_fx = function (element, newString, speed) {
-  //
   //
   const newTxtArr = newString.split('');
   const oldTxtArr = element.textContent.split('');
@@ -34,11 +32,13 @@ const text_switch_fx = function (element, newString, speed) {
   let diff = oldTxtArr.length - newTxtArr.length;
   let i = 0;
   let emptyTxt;
+  // speed = speed<4? 4:
   //
+  intro.style.background = 'rgba(0, 0, 0, 0.5)';
   element.classList.add('blur-transition');
   element.style.filter = `blur(${Math.random() * 5 + 1.5}px) drop-shadow(${
     Math.random() > 0.5 ? '-' : '+'
-  }${Math.random() * 25}px ${Math.random() > 0.5 ? '-' : '+'}${
+  }${Math.random() * 215}px ${Math.random() > 0.5 ? '-' : '+'}${
     Math.random() * 2
   }px ${Math.random() * 1}px white)`;
   // RanBorderColor(element);
@@ -52,16 +52,22 @@ const text_switch_fx = function (element, newString, speed) {
     //Clear
     if (newString.length > element_length) {
       if (i == newTxtArr.length - 1 - diff) {
+        // element.style.background = 'rgba(255, 255, 255,0.4)';
+        if (speed == 1) {
+          intro.style.background = 'rgb(45, 21, 35)';
+        }
         element.style.filter = 'blur(0px)';
         translate.disabled = false;
-        // element.style.background = 'rgba(255, 255, 255,0.4)';
         clearInterval(interval);
       }
     } else {
       if (i == newTxtArr.length - 1 + diff) {
+        // element.style.background = 'rgba(255, 255, 255,0.4)';
+        if (speed == 1) {
+          intro.style.background = 'rgb(45, 21, 35)';
+        }
         element.style.filter = 'blur(0px)';
         translate.disabled = false;
-        // element.style.background = 'rgba(255, 255, 255,0.4)';
         clearInterval(interval);
       }
     }
@@ -70,28 +76,32 @@ const text_switch_fx = function (element, newString, speed) {
   const interval = setInterval(exe, speed);
 };
 
-let toggle_bio_lang = function (lang) {
+const toggle_bio_lang = function (lang) {
   if (lang == 'es') {
-    text_switch_fx(p[0], bios.spanish.p0, Math.random() * 11 + 1);
+    text_switch_fx(p[0], bios.spanish.p0, Math.random() * 5 + 3);
     text_switch_fx(p[1], bios.spanish.p1, 1);
-    text_switch_fx(p[2], bios.spanish.p2, Math.random() * 7 + 1);
-    text_switch_fx(p[3], bios.spanish.p3, Math.random() * 9 + 1);
+    text_switch_fx(p[2], bios.spanish.p2, Math.random() * 5 + 2);
+    text_switch_fx(p[3], bios.spanish.p3, Math.random() * 5 + 3);
   }
   if (lang == 'en') {
-    text_switch_fx(p[0], bios.english.p0, Math.random() * 11 + 1);
+    text_switch_fx(p[0], bios.english.p0, Math.random() * 5 + 3);
     text_switch_fx(p[1], bios.english.p1, 1);
-    text_switch_fx(p[2], bios.english.p2, Math.random() * 7 + 1);
-    text_switch_fx(p[3], bios.english.p3, Math.random() * 9 + 1);
+    text_switch_fx(p[2], bios.english.p2, Math.random() * 5 + 2);
+    text_switch_fx(p[3], bios.english.p3, Math.random() * 5 + 3);
   }
 };
 
 translate.addEventListener('click', (e) => {
   e.target.disabled = true;
-  if (translate.textContent == 'Spanish') {
+  if (translate.textContent == 'Español') {
     toggle_bio_lang('es');
     translate.textContent = 'English';
   } else {
     toggle_bio_lang('en');
-    translate.textContent = 'Spanish';
+    translate.textContent = 'Español';
   }
 });
+//Cambiar texto del header segun seleccion: hi, toolbox, services, etc..
+//El header que sea mas "pantalla" de pc que muestre
+//agregar un boton back en la pantalla, esconder el modulo y cambiar la pagina completa
+//o estirar la pantalla hacia abajo y mostrar contenido como si fuese una consola

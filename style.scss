@@ -11,12 +11,12 @@
   src: url(../fonts/static/OpenSans/OpenSans-Medium.ttf);
 }
 @font-face {
-  font-family: gochi;
-  src: url(../fonts/GochiHand-Regular.ttf);
-}
-@font-face {
   font-family: rubik;
   src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 *::selection {
   color: rgb(0, 0, 0);
@@ -25,6 +25,41 @@
 * {
   // margin: 0px;
   cursor: url('../cursors/cursor_arrow.png'), auto;
+}
+//root for higher specificity
+:root {
+  --just-white: rgb(255, 255, 255);
+}
+//Selecciona todos los atributos href con valor about.html
+//con un after agregamos un icono/texto
+a[target='_blank'] {
+  color: darkblue;
+}
+a[target='_blank']::after {
+  content: url(//imagen);
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+//Selecciona todas las clases que empiezan(|) con "link" y la
+//palabra termina con un break "-"
+a[class|='link'] {
+  color: aqua;
+}
+//Igual que "|" pero selecciona valor del atributo "http" sin
+//depender de un break
+a[href^='http'] {
+  color: aqua;
+  //Selecciona todo lo que contenga la palabra "google"
+  //sin principio o fin
+}
+a[class^='google'] {
+  color: aqua;
+}
+//Selecciona todos los valores del atributo href
+//que terminen con ".cl"
+a[href$='.cl'] {
+  color: black;
 }
 
 main {
