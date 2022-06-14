@@ -1,50 +1,35 @@
-.bio-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  justify-content: center;
-  align-items: center;
-}
-#title {
+#cmd-screen {
+  color: white;
   display: flex;
-  // justify-content: center;
+  transition: all 300ms;
   align-items: center;
   text-indent: 100px;
   width: 100%;
-  height: 15vh;
+  height: 180px;
   background-color: rgb(15, 9, 9);
-}
-
-#name {
   font-family: gothic;
-  // font-size: 1.5em;
-  color: #ffffff;
+  user-select: none;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  & > * {
+    transition: 100ms;
+  }
 }
-#name::selection {
-  color: rgb(255, 255, 255);
-  background: rgb(255, 0, 0);
+#hi {
+  font-family: inherit;
+}
+#name {
+  font-size: 1.5rem;
+  &::selection {
+    color: white;
+    background: red;
+  }
 }
 #rol {
-  font-family: gothic;
-  font-size: 1.5em;
-
-  color: #ffffff;
   margin: 0px;
-  // text-indent: 140px;
-}
-#rol::selection {
-  color: rgb(255, 0, 0);
-  background: rgb(255, 255, 255);
-}
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  border-radius: 0px;
-  background-color: rgba(255, 255, 255, 0);
-  margin: auto;
-  padding-top: 13px;
-  padding-bottom: 15px;
-  user-select: none;
-  font-size: 1.2em;
+  &::selection {
+    color: rgb(255, 0, 0);
+    background: white;
+  }
 }

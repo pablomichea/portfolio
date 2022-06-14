@@ -1,9 +1,6 @@
 'strict mode';
 
 let rol = document.querySelector('#rol');
-let nombre = document.querySelector('#name');
-let li = document.querySelectorAll('li');
-let a = document.querySelectorAll('a');
 
 /////////////Title auto input
 let autoInputFX = (txt, ele, speed, repeat) => {
@@ -46,9 +43,3 @@ let RanBorderColor = (ele, speed = '200ms', interval = 200, op = '0') => {
 
 /////////////Inits
 
-autoInputFX(
-  '34 std::cout << name << ", a self taught software developer.";     ',
-  rol,
-  80,
-  false
-);

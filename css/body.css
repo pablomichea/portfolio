@@ -1,7 +1,7 @@
 body {
   position: relative;
   font-family: openSansLigth;
-  background-color: #101b27;
+  background-color: #1c2125;
   font-size: 15px;
   margin: 0px;
 }
@@ -17,6 +17,21 @@ body::after {
   background-color: rgba(0, 0, 0, 0.5);
   background-image: url("../img/bg-line2.png");
   opacity: 60%;
+}
+
+.bio-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #translate {
@@ -89,7 +104,7 @@ body::after {
   width: 100%;
 }
 
-#left-menu-items li {
+#left-menu-items > * {
   -webkit-transform: scaleY(-10px);
           transform: scaleY(-10px);
   font-family: rubik;
@@ -110,7 +125,7 @@ body::after {
   height: 100%;
 }
 
-#left-menu-items li:hover {
+#left-menu-items > *:hover {
   -webkit-transition: 300ms;
   transition: 300ms;
   -webkit-user-select: none;
@@ -120,7 +135,7 @@ body::after {
   background-color: #7c6363;
 }
 
-#left-menu-items li:active {
+#left-menu-items > *:active {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -137,12 +152,14 @@ body::after {
   position: relative;
   font-family: Quicksand;
   font-size: 1rem;
+  line-height: 1.4;
+  text-align: justify;
   padding: 10px;
+  padding-right: 40px;
+  padding-left: 30px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(93%, rgba(158, 167, 170, 0.056)), color-stop(0%, rgba(143, 150, 150, 0.192)));
   background: linear-gradient(0deg, rgba(158, 167, 170, 0.056) 93%, rgba(143, 150, 150, 0.192) 0%);
   color: var(--just-white, white);
-  padding-right: 30px;
-  padding-left: 20px;
   border-left: 3px solid white;
   min-width: 200px;
   max-width: 100%;
@@ -196,7 +213,7 @@ body::after {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, rgba(237, 28, 28, 0.159)), color-stop(10%, rgba(175, 84, 84, 0.275)));
     background: linear-gradient(180deg, rgba(237, 28, 28, 0.159) 31%, rgba(175, 84, 84, 0.275) 10%);
   }
-  #title {
+  #cmd-screen {
     text-indent: 100px;
   }
 }
@@ -222,7 +239,7 @@ body::after {
     font-size: 1em;
     text-indent: 50px;
   }
-  #title {
+  #cmd-screen {
     text-indent: 80px;
   }
 }

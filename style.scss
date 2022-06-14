@@ -18,13 +18,13 @@
   font-family: Quicksand;
   src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
-*::selection {
-  color: rgb(0, 0, 0);
-  background: rgb(0, 243, 190);
-}
+
 * {
-  // margin: 0px;
   cursor: url('../cursors/cursor_arrow.png'), auto;
+  &::selection {
+    color: rgb(0, 0, 0);
+    background: rgb(0, 243, 190);
+  }
 }
 //root for higher specificity
 :root {
@@ -81,14 +81,12 @@ a {
   font-size: 1em;
   color: rgb(255, 255, 255);
   transition: 200ms;
-}
-a:visited {
-  color: rgb(255, 255, 255);
-}
-a:hover {
-  color: rgb(255, 255, 255);
-  // padding-left: 10px;
-  // padding-right: 10px;
+  &:visited {
+    color: rgb(255, 255, 255);
+  }
+  &:hover {
+    color: rgb(255, 255, 255);
+  }
 }
 ul {
   list-style: none;
@@ -117,16 +115,18 @@ ul {
 
 footer {
   position: fixed;
-  font-family: rubik;
   width: 100%;
   bottom: 0px;
   small {
-    user-select: none;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(0, 255, 234);
-    background-color: rgba(255, 255, 255, 0.103);
+    font-size: 0.6rem;
+    letter-spacing: 10px;
+    user-select: none;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.05);
   }
 }

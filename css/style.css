@@ -23,6 +23,10 @@
   src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 
+* {
+  cursor: url("../cursors/cursor_arrow.png"), auto;
+}
+
 *::-moz-selection {
   color: black;
   background: #00f3be;
@@ -31,10 +35,6 @@
 *::selection {
   color: black;
   background: #00f3be;
-}
-
-* {
-  cursor: url("../cursors/cursor_arrow.png"), auto;
 }
 
 :root {
@@ -137,17 +137,11 @@ ul {
 
 footer {
   position: fixed;
-  font-family: rubik;
   width: 100%;
   bottom: 0px;
 }
 
 footer small {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,7 +151,15 @@ footer small {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #00ffea;
-  background-color: rgba(255, 255, 255, 0.103);
+  font-size: 0.6rem;
+  letter-spacing: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.05);
 }
 /*# sourceMappingURL=style.css.map */

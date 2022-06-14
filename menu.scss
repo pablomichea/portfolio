@@ -1,5 +1,6 @@
 .contxMenu {
   transition: 150ms linear;
+  padding: 2px;
   display: none;
   opacity: 0%;
   position: absolute;
@@ -9,4 +10,7 @@
   background-color: rgb(255, 255, 255);
   border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0.438);
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 }

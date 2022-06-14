@@ -35,6 +35,7 @@ const text_switch_fx = function (element, newString, speed) {
   // speed = speed<4? 4:
   //
   intro.style.background = 'rgba(0, 0, 0, 0.5)';
+  element.style.textAlign = 'start';
   element.classList.add('blur-transition');
   element.style.filter = `blur(${Math.random() * 5 + 1.5}px) drop-shadow(${
     Math.random() > 0.5 ? '-' : '+'
@@ -56,6 +57,7 @@ const text_switch_fx = function (element, newString, speed) {
         if (speed == 1) {
           intro.style.background = 'rgb(45, 21, 35)';
         }
+        element.style.textAlign = 'justify';
         element.style.filter = 'blur(0px)';
         translate.disabled = false;
         clearInterval(interval);
@@ -66,6 +68,7 @@ const text_switch_fx = function (element, newString, speed) {
         if (speed == 1) {
           intro.style.background = 'rgb(45, 21, 35)';
         }
+        element.style.textAlign = 'justify';
         element.style.filter = 'blur(0px)';
         translate.disabled = false;
         clearInterval(interval);
