@@ -23,6 +23,11 @@
   src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: PressStart2P;
+  src: url(../fonts/PressStart2P-Regular.ttf);
+}
+
 * {
   cursor: url("../cursors/cursor_arrow.png"), auto;
 }

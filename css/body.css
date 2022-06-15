@@ -1,7 +1,7 @@
 body {
   position: relative;
   font-family: openSansLigth;
-  background-color: #1c2125;
+  background-color: rgba(6, 16, 31, 0.911);
   font-size: 15px;
   margin: 0px;
 }
@@ -14,9 +14,8 @@ body::after {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
   background-image: url("../img/bg-line2.png");
-  opacity: 60%;
+  opacity: 100%;
 }
 
 .bio-header {
@@ -157,8 +156,8 @@ body::after {
   padding: 10px;
   padding-right: 40px;
   padding-left: 30px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(93%, rgba(158, 167, 170, 0.056)), color-stop(0%, rgba(143, 150, 150, 0.192)));
-  background: linear-gradient(0deg, rgba(158, 167, 170, 0.056) 93%, rgba(143, 150, 150, 0.192) 0%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(92%, rgba(0, 191, 255, 0.056)), color-stop(0%, rgba(143, 150, 150, 0.192)));
+  background: linear-gradient(0deg, rgba(0, 191, 255, 0.056) 92%, rgba(143, 150, 150, 0.192) 0%);
   color: var(--just-white, white);
   border-left: 3px solid white;
   min-width: 200px;
